@@ -1,0 +1,21 @@
+version: '3.4'
+
+name: 'datafi'
+
+services:
+  database-mongo:
+      image: mongo:4.2.23
+      container_name: datafi-database-mongo
+      profiles:
+        - database
+  
+networks:
+  default:
+    name: 'datafi-network'
+    driver: bridge
+
+volumes:
+  mongodb:
+    driver: local
+  mongoconfig:
+    driver: local
