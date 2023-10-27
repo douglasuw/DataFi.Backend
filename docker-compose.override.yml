@@ -2,33 +2,16 @@ version: '3.4'
 
 services:
 
-  database:
+  database-mongo:
     environment:
-      SA_PASSWORD: 'P@ssw0rd'
-      ACCEPT_EULA: 'Y'
-    build:
-      target: mssql
-      args:
-        FILE_NAME: datafi.database
-        SA_PASSWORD: 'P@ssw0rd'
-        SQL_PACKAGE_STRATEGY: bacpac
-        SQL_PACKAGE_ACTION: Import
-        SERVER: .
-        DATABASE: datafi
-        USER: sa
-        PASSWORD: P@ssw0rd
-    ports:
-      - '1433:1433'
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+      MONGO_INITDB_DATABASE: datafi
+    volumes:
+      - ./src/database/mongo-entrypoint:/docker-entrypoint-initdb.d
+      - mongodb:/data/db
+      - mongoconfig:/data/configdb
 
-  mailcatcher:
-    environment:
-      - MAIL_LIMIT=70 
-      - TIMEZONE=America/Los_Angeles
     ports:
-      - "1080:1080"
-      - "1025:1025"
-    
-  gateway-envoy:
-    ports:
-      - "8888:80"
-      - "8001:8001"
+      - 27017:27017
+
