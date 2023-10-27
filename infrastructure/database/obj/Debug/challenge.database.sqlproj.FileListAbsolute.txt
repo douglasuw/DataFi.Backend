@@ -1,0 +1,11 @@
+a:\projetos\jobsity\node-challenge\infrastructure\database\bin\Debug\challenge.database.dacpac
+a:\projetos\jobsity\node-challenge\infrastructure\database\bin\Debug\Docker.publish.xml
+a:\projetos\jobsity\node-challenge\infrastructure\database\bin\Debug\challenge.database.dll
+a:\projetos\jobsity\node-challenge\infrastructure\database\bin\Debug\challenge.database.pdb
+a:\projetos\jobsity\node-challenge\infrastructure\database\obj\Debug\challenge.database.sqlproj.AssemblyReference.cache
+a:\projetos\jobsity\node-challenge\infrastructure\database\obj\Debug\Model.xml
+a:\projetos\jobsity\node-challenge\infrastructure\database\obj\Debug\refactor.xml
+a:\projetos\jobsity\node-challenge\infrastructure\database\obj\Debug\postdeploy.sql
+a:\projetos\jobsity\node-challenge\infrastructure\database\obj\Debug\predeploy.sql
+a:\projetos\jobsity\node-challenge\infrastructure\database\obj\Debug\challenge.database.dll
+a:\projetos\jobsity\node-challenge\infrastructure\database\obj\Debug\challenge.database.pdb

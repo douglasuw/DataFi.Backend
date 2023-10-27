@@ -1,0 +1,1 @@
+CREATE LOGIN [usr_datafi] WITH PASSWORD = '$uper_Secret';
