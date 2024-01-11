@@ -17,3 +17,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DATAFI_557DE }}'
           channelId: live
           projectId: datafi-557de
+          entryPoint: frontend/
+
