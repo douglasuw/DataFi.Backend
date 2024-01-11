@@ -1,7 +1,12 @@
 version: '3.4'
 
 services:
-
+  datafi-core-api:
+    environment:
+      NODE_ENV: local
+      SWAGGER_PATH: /datafi-core-api
+      PORT: 8080
+      
   database-mongo:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin

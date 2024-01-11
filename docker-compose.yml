@@ -8,6 +8,15 @@ services:
       container_name: datafi-database-mongo
       profiles:
         - database
+
+  datafi-core-api:
+    image: datafi-core-api-${TAG:-latest}
+    container_name: datafi-core-api
+    build:
+      context: .
+      dockerfile: src/datafi-core-api/Dockerfile
+    profiles:
+      - services
   
 networks:
   default:
