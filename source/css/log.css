@@ -1,0 +1,221 @@
+/*preload*/
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+.disclaimer {display: none;}
+
+/*reset*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	transition: all 250ms;
+}
+
+/*General*/
+body {
+	background: #23272B;
+	color: #8D9399;
+}
+a {
+	text-decoration: underline;
+	color: #8D9399;
+}
+a:hover {
+	color: #FFFFFF;
+}
+a:active {
+	color: #077BF8;
+}
+
+
+/*Common*/
+.brand-font {
+	font-family: 'Poppins';
+}
+.hide {
+	display: none !important;
+}
+
+
+/*header*/
+header {
+	max-width: 960px;
+	min-width: 240px;
+	margin: 0 auto;
+	padding: 20px;
+	width: 92%;
+	height: 88px;
+/*	background: red;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header #brand {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+header #brand svg {
+	height: 56px;
+	width: 56px;
+	fill: #FFFFFF;
+}
+header #brand div {
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0.2rem;
+}
+header #brand div span {
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 0.2rem;
+}
+
+header #language {
+	position: relative;
+}
+header #language #language-active {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	background: #202327;
+	color: #FFFFFF;
+	padding: 12px;
+	border-radius: 8px;
+	cursor: pointer;
+	height: 48px;
+}
+header #language #language-active:hover {
+	background: #333A40;
+}
+header #language img {
+	width: 24px;
+	height: 24px;
+}
+header #language #language-options {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	padding: 8px;
+	background: #202327;
+	top: 100%;
+	right: 0;
+	border-radius: 8px;
+}
+header #language #language-options .language-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	gap: 8px;
+	background: transparent;
+	padding: 4px 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	width: 100%;
+}
+header #language #language-options .language-item:hover {
+	background: #333A40;
+}
+
+
+/*main*/
+main {
+	max-width: 960px;
+	min-width: 240px;
+	margin: 0 auto;
+	padding: 20px;
+	width: 92%;
+	min-height: calc(100vh - 88px);
+/*	background: rgba(255, 255, 255, 0.05);*/
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+main #box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 20px;
+	width: 100%;
+	max-width: 420px;
+	padding-top: 32px;
+}
+
+main #box #title {
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 28px;
+	letter-spacing: 0.2em;
+}
+
+main #box #form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 12px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+main #box #form .form-data {
+	padding: 16px;
+	background: #333A40;
+	border: 1px solid #333A40;
+	color: #FFFFFF;
+	border-radius: 8px;
+	width: 100%;
+}
+main #box #form .form-data:focus {
+	border-color: #EFCC24;
+}
+main #box #form #form-remember input {
+	border: none;
+}
+main #box #form #form-remember input, main #box #form #form-remember label {
+	cursor: pointer;
+}
+main #box #form button {
+	background: #EFCC24;
+	border: none;
+	color: #000000;
+	font-weight: 700;
+	width: 100%;
+	padding: 16px;
+	border-radius: 8px;
+	margin-top: 8px;
+	height: 54px;
+	cursor: pointer;
+}
+main #box #form button:hover {
+	background: #CDAA02;
+}
+main #box #form button:active {
+	letter-spacing: 0.2rem;
+}
+
+main #box #terms {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
