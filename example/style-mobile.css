@@ -1,0 +1,106 @@
+@media screen and (max-width: 768px) {
+
+
+header #header-brand .brand-name {
+	display: none;
+}
+
+header #header-control .control-name {
+	display: none;
+}
+
+header #header-nav-menu {
+	display: flex;
+}
+header #header-nav {
+	flex-direction: column;
+	background: #7764CA;
+	position: absolute;
+	z-index: 99;
+	top: 64px;
+	left: -100%;
+	width: 100%;
+	padding: 12px;
+	border-top: 1px solid #41366E;
+	transition: all 250ms;
+}
+header #header-nav .nav-link {
+	width: 84%;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+
+#meta {
+	height: auto;
+	min-height: 88px;
+	padding: 32px 12px;
+}
+#meta-box {
+	flex-direction: column;
+}
+#meta-account {
+	flex-direction: column;
+	gap: 16px;
+	width: 100% !important;
+	margin-bottom: 16px;
+}
+#meta-campaign {
+	width: 100% !important;
+}
+#meta .meta-item {
+	width: 100% !important;
+}
+#meta .meta-item .meta-item-sel {
+	width: 100% !important;
+}
+
+
+#report-functions {
+	flex-direction: column;
+	height: auto;
+	min-height: 64px;
+	padding: 32px 0;
+}
+
+
+#report .report-section-head {
+	flex-direction: column;
+	align-items: start;
+	height: auto;
+	min-height: 64px;
+	padding: 32px 0;
+}
+#report .report-section-buttons {
+	width: 100%;
+	justify-content: space-between;
+}
+
+#report .report-section-result .report-data {
+	flex-direction: column;
+}
+#report .report-section-result .report-data .report-data-name {
+	width: 100%;
+}
+#report .report-section-result .report-data .report-data-value {
+	width: 100%;
+}
+#report .report-section-result .report-data .report-data-info {
+	width: 100%;
+}
+
+
+footer #footer-container {
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	height: auto;
+	min-height: 60px;
+	padding: 32px 0;
+}
+footer #footer-brand {
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+}

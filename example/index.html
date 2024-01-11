@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>reportify</title>
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css2?family=Spinnaker:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css?v=14">
+	<link rel="stylesheet" type="text/css" href="style-mobile.css?v=14">
+</head>
+<body>
+
+	<header>
+
+		<div id="header-brand" class="header-bordered">
+			<svg class="brand-icon" viewBox="0 0 24 24"><path d="M14.9703 3.3437C13.0166 2.88543 10.9834 2.88543 9.02975 3.3437C6.20842 4.00549 4.0055 6.20841 3.3437 9.02975C2.88543 10.9834 2.88543 13.0166 3.3437 14.9703C4.0055 17.7916 6.20842 19.9945 9.02975 20.6563C10.9834 21.1146 13.0166 21.1146 14.9703 20.6563C17.7916 19.9945 19.9945 17.7916 20.6563 14.9703C21.1146 13.0166 21.1146 10.9834 20.6563 9.02975C19.9945 6.20842 17.7916 4.00549 14.9703 3.3437ZM8.55377 9.12812C8.55377 8.8109 8.81093 8.55374 9.12815 8.55374H12.9573C13.2745 8.55374 13.5317 8.8109 13.5317 9.12812C13.5317 9.44533 13.2745 9.70249 12.9573 9.70249H9.12815C8.81093 9.70249 8.55377 9.44533 8.55377 9.12812ZM8.55377 12C8.55377 11.6828 8.81093 11.4256 9.12815 11.4256H14.8719C15.1891 11.4256 15.4462 11.6828 15.4462 12C15.4462 12.3172 15.1891 12.5743 14.8719 12.5743H9.12815C8.81093 12.5743 8.55377 12.3172 8.55377 12ZM8.55377 14.8718C8.55377 14.5546 8.81093 14.2975 9.12815 14.2975H12C12.3172 14.2975 12.5744 14.5546 12.5744 14.8718C12.5744 15.189 12.3172 15.4462 12 15.4462H9.12815C8.81093 15.4462 8.55377 15.189 8.55377 14.8718Z"></svg>
+				<span class="brand-name brand-font">reportify</span>
+			</div>
+
+			<div id="header-nav-menu" opened="0">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+			<nav id="header-nav">
+				<a class="nav-link selected" href="">Relatórios</a>
+				<a class="nav-link" href="">Templates</a>
+				<a class="nav-link" href="">Clientes</a>
+				<a class="nav-link" href="">Configurações</a>
+			</nav>
+
+			<div id="header-control" class="header-bordered">
+				<span class="control-name">Manager</span>
+				<img class="control-image" src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png">
+			</div>
+
+		</header>
+
+		<main>
+
+			<section id="meta">
+				<div class="container">
+					<div id="meta-box">
+
+						<div id="meta-account">
+							<div class="meta-item">
+								<div class="meta-item-name">Business Manager</div>
+								<select class="meta-item-sel" id="meta-account-bm">
+									<option>Carregando dados ...</option>
+								</select>
+							</div>
+							<div class="meta-item">
+								<div class="meta-item-name">Conta de Anúncio</div>
+								<select class="meta-item-sel" id="meta-account-account">
+									<option>Carregando dados ...</option>
+								</select>
+							</div>
+						</div>
+
+						<div id="meta-campaign">
+							<div class="meta-item">
+								<div class="meta-item-name">Campanha</div>
+								<select class="meta-item-sel" id="meta-account-campaign">
+									<option>Carregando dados ...</option>
+								</select>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+
+					<div id="report-functions">
+
+						<div id="report-parameter">
+							<div class="report-parameter-item">
+								<label>De</label>
+								<input type="date" id="resultados-data-inicio" class="resultados-data">
+							</div>
+							<div class="report-parameter-item">
+								<label>Até</label>
+								<input type="date" id="resultados-data-fim" class="resultados-data">
+							</div>
+						</div>
+
+						<div id="report-action">
+							<button type="button" class="report-action-btn" id="report-action-getresult">
+								<svg fill="#FFF" width="16px" viewBox="0 0 24 24" >
+									<path id="write" class="cls-1" d="M1450,216h-20a2,2,0,0,1-2-2V194a2,2,0,0,1,2-2h12.81l-2,2H1430v20h20V203.193l2-2V214A2,2,0,0,1,1450,216Zm-12-5-4.99.014L1433,206l13.55-13.439a1.962,1.962,0,0,1,2.78,0l2.08,2.09a1.971,1.971,0,0,1,0,2.788Zm-3-2h3l-3-3v3Zm12.94-15.045L1437,205l2,2,11.02-10.955Z" transform="translate(-1428 -192)"/>
+								</svg>
+								Gerar relatório da conta
+							</button>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section id="report">
+				<div class="container">
+
+					<div id="report-account">
+
+						<div class="report-section-head">
+
+							<div class="report-section-title">Relatório da Conta de Anúncio</div>
+
+							<div class="report-section-buttons">
+								<button type="button" class="report-action-btn" id="whatsappSend">
+									<img src="img/whatsapp.svg">
+									Enviar
+								</button>
+								<button type="button" class="report-action-btn" id="whatsappCopy">
+									<img src="img/whatsapp.svg">
+									Copiar
+								</button>
+							</div>
+
+						</div>
+
+						<div class="report-section-result">
+
+							<div class="report-section-loading">
+								Montando relatório...
+							</div>
+							
+							<div class="report-data template" report="0">
+								<div class="report-data-name"></div>
+								<div class="report-data-value"></div>
+								<div class="report-data-info">
+									<div class="report-data-category"></div>
+									<div class="report-data-check">
+										<svg class="on" viewBox="0 0 20 20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 5L8 15l-5-4"/></svg>
+										<svg class="off" viewBox="0 0 1024 1024"><path d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- <div id="report-campaign">
+
+						<div class="report-section-head">
+
+							<div class="report-section-title">Relatório da Campanha</div>
+
+							<div class="report-section-buttons">
+								<button type="button" class="report-action-btn" id="whatsappSendCampaign">
+									<img src="img/whatsapp.svg">
+									Enviar
+								</button>
+								<button type="button" class="report-action-btn" id="whatsappCopyCampaign">
+									<img src="img/whatsapp.svg">
+									Copiar
+								</button>
+							</div>
+
+						</div>
+
+						<div class="report-section-result">
+
+							<div class="report-data" report="0">
+								<div class="report-data-category">N</div>
+								<div class="report-data-name">Impressões</div>
+								<div class="report-data-value">78.645</div>
+								<div class="report-data-check">
+									<svg class="on" viewBox="0 0 20 20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 5L8 15l-5-4"/></svg>
+									<svg class="off" viewBox="0 0 1024 1024"><path d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
+								</div>
+							</div>
+
+						</div>
+
+					</div> -->
+
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+			<div class="container">
+				<div id="footer-container">
+
+					<div id="footer-brand">
+						<svg class="brand-icon" viewBox="0 0 24 24"><path d="M14.9703 3.3437C13.0166 2.88543 10.9834 2.88543 9.02975 3.3437C6.20842 4.00549 4.0055 6.20841 3.3437 9.02975C2.88543 10.9834 2.88543 13.0166 3.3437 14.9703C4.0055 17.7916 6.20842 19.9945 9.02975 20.6563C10.9834 21.1146 13.0166 21.1146 14.9703 20.6563C17.7916 19.9945 19.9945 17.7916 20.6563 14.9703C21.1146 13.0166 21.1146 10.9834 20.6563 9.02975C19.9945 6.20842 17.7916 4.00549 14.9703 3.3437ZM8.55377 9.12812C8.55377 8.8109 8.81093 8.55374 9.12815 8.55374H12.9573C13.2745 8.55374 13.5317 8.8109 13.5317 9.12812C13.5317 9.44533 13.2745 9.70249 12.9573 9.70249H9.12815C8.81093 9.70249 8.55377 9.44533 8.55377 9.12812ZM8.55377 12C8.55377 11.6828 8.81093 11.4256 9.12815 11.4256H14.8719C15.1891 11.4256 15.4462 11.6828 15.4462 12C15.4462 12.3172 15.1891 12.5743 14.8719 12.5743H9.12815C8.81093 12.5743 8.55377 12.3172 8.55377 12ZM8.55377 14.8718C8.55377 14.5546 8.81093 14.2975 9.12815 14.2975H12C12.3172 14.2975 12.5744 14.5546 12.5744 14.8718C12.5744 15.189 12.3172 15.4462 12 15.4462H9.12815C8.81093 15.4462 8.55377 15.189 8.55377 14.8718Z"></svg>
+							<span class="brand-name">&copy; 2023 <strong class="brand-font">reportify</strong> | Sistema de relatório para uso individual por Gerente de Tráfego Digital</span>
+						</div>
+
+						<nav>
+							<a class="nav-link" href="">Requisitos</a>
+							<a class="nav-link" href="">Termos e Condições</a>
+							<a class="nav-link" href="">Privacidade</a>
+							<a class="nav-link" href="">Ajuda</a>
+						</nav>
+
+					</div>
+				</div>
+			</footer>
+
+
+			<div id="message">
+				<div>
+					<span>Mensagem de teste</span>
+					<svg viewBox="0 0 24 24">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22ZM8.96965 8.96967C9.26254 8.67678 9.73742 8.67678 10.0303 8.96967L12 10.9394L13.9696 8.96969C14.2625 8.6768 14.7374 8.6768 15.0303 8.96969C15.3232 9.26258 15.3232 9.73746 15.0303 10.0303L13.0606 12L15.0303 13.9697C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0303 15.0303C9.73744 15.3232 9.26256 15.3232 8.96967 15.0303C8.67678 14.7374 8.67678 14.2626 8.96967 13.9697L10.9393 12L8.96965 10.0303C8.67676 9.73744 8.67676 9.26256 8.96965 8.96967Z"/>
+					</svg>
+				</div>
+			</div>
+
+
+			<br><br>
+			<hr>
+			<br><br>
+			<button type="button" id="login">Login Facebook</button>
+			<br><br><br>
+			<div id="resposta"></div>
+			<br><br><br>
+
+
+			<!-- JS -->
+			<script src="assets/jquery-3.7.0.min.js"></script>
+			<script src="script.js?v=122"></script>
+			<script src="general.js?v=122"></script>
+
+			<script>
+				(function(d, s, id){
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) {return;}
+					js = d.createElement(s); js.id = id;
+					js.src = "https://connect.facebook.net/en_US/sdk.js";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+
+				window.fbAsyncInit = function() {
+					FB.init({
+						appId      : '308374748545674',
+						cookie     : true,
+						xfbml      : true,
+						version    : 'v17.0'
+					});
+					FB.AppEvents.logPageView();
+				};
+
+				document.getElementById('login').addEventListener('click', function() {
+					FB.login(function(response) {
+						if (response.authResponse) {
+							var accessToken = response.authResponse.accessToken;
+							console.log("Token de acesso: " + accessToken);
+							document.getElementById("resposta").innerHTML = JSON.stringify(accessToken);
+							fb_token = JSON.stringify(accessToken);
+						} else {
+							console.log("O login foi cancelado ou ocorreu um erro.");
+						}
+					}, {scope: 'public_profile,email,ads_read,business_management'});
+				});
+			</script>
+
+		</body>
+		</html>
