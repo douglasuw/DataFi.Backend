@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Field templates</h1>
+
+<div id="field_templates">
+  <% @field_templates.each do |field_template| %>
+    <%= render field_template %>
+    <p>
+      <%= link_to "Show this field template", field_template %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New field template", new_field_template_path %>

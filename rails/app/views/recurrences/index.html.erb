@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Recurrences</h1>
+
+<div id="recurrences">
+  <% @recurrences.each do |recurrence| %>
+    <%= render recurrence %>
+    <p>
+      <%= link_to "Show this recurrence", recurrence %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New recurrence", new_recurrence_path %>

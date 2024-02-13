@@ -1,0 +1,30 @@
+version: '3.4'
+
+name: "datafi"
+
+services:
+
+
+  backend-api:
+    image: ${REGISTRY:-labs}/datafi-backend-api:${TAG:-latest}
+    container_name: datafi-backend-api
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - 3000:3000
+
+
+
+networks:
+  default:
+    name: 'datafi-network'
+    driver: bridge
+
+# volumes:
+  mongodb:
+    driver: local
+  mongoconfig:
+    driver: local
+  redis_data:
+    driver: local

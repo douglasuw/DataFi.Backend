@@ -1,0 +1,62 @@
+<%= form_with(model: plan) do |form| %>
+  <% if plan.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(plan.errors.count, "error") %> prohibited this plan from being saved:</h2>
+
+      <ul>
+        <% plan.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :month_value, style: "display: block" %>
+    <%= form.text_field :month_value %>
+  </div>
+
+  <div>
+    <%= form.label :year_value, style: "display: block" %>
+    <%= form.text_field :year_value %>
+  </div>
+
+  <div>
+    <%= form.label :recommend, style: "display: block" %>
+    <%= form.check_box :recommend %>
+  </div>
+
+  <div>
+    <%= form.label :month_discount_percentual, style: "display: block" %>
+    <%= form.number_field :month_discount_percentual %>
+  </div>
+
+  <div>
+    <%= form.label :year_discount_percentual, style: "display: block" %>
+    <%= form.number_field :year_discount_percentual %>
+  </div>
+
+  <div>
+    <%= form.label :year_discount_value, style: "display: block" %>
+    <%= form.text_field :year_discount_value %>
+  </div>
+
+  <div>
+    <%= form.label :month_discount_value, style: "display: block" %>
+    <%= form.text_field :month_discount_value %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

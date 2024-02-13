@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @recurrence %>
+
+<div>
+  <%= link_to "Edit this recurrence", edit_recurrence_path(@recurrence) %> |
+  <%= link_to "Back to recurrences", recurrences_path %>
+
+  <%= button_to "Destroy this recurrence", @recurrence, method: :delete %>
+</div>

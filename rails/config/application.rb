@@ -24,7 +24,7 @@ if File.exist? key_file
   ENV["RAILS_MASTER_KEY"] = File.read key_file
 end
 
-module RailsCatAlbum
+module DataFi
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0

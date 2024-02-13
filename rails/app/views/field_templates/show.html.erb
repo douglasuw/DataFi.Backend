@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @field_template %>
+
+<div>
+  <%= link_to "Edit this field template", edit_field_template_path(@field_template) %> |
+  <%= link_to "Back to field templates", field_templates_path %>
+
+  <%= button_to "Destroy this field template", @field_template, method: :delete %>
+</div>
