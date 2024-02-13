@@ -4,7 +4,6 @@ name: "datafi"
 
 services:
 
-
   backend-api:
     image: ${REGISTRY:-labs}/datafi-backend-api:${TAG:-latest}
     container_name: datafi-backend-api
@@ -14,8 +13,18 @@ services:
     ports:
       - 3000:3000
 
-
-
+  database:
+    container_name: database
+    image: postgres:12.18-bullseye
+    environment:
+      - POSTGRES_USER=datafi-db-username
+      - POSTGRES_PASSWORD=datafi-db-username
+      - POSTGRES_DB=datafi
+    ports:
+      - 5432:5432
+    volumes:
+      - /var/lib/postgresql/data
+      
 networks:
   default:
     name: 'datafi-network'
